@@ -8,7 +8,7 @@ export const BoxContainer = styled(Box)<BoxProps>(() => ({
   margin: '20px',
   borderRadius: '20px',
   background: '#37474f',
-  width: '50%', // Adiciona essa linha para definir a largura como 50%
+  width: '30%', // Adiciona essa linha para definir a largura como 50%
   // height: '50%', // Adiciona essa linha para definir a altura como 50%
   position: 'fixed', // Adiciona essa linha para centralizar o componente na tela
   top: '50%', // Adiciona essa linha para posicionar o componente verticalmente no centro
@@ -23,5 +23,20 @@ export const BoxContainer = styled(Box)<BoxProps>(() => ({
   },
   '& .Mui-completed': {
     color: '#40e91e !important'
+  },
+  '& .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input': {
+    color: '#fff'
+  },
+  '& .MuiFormLabel-asterisk MuiInputLabel-asterisk css-wgai2y-MuiFormLabel-asterisk': {
+    color: '#40e91e !important'
   }
+}));
+
+export const BoxField = styled(Box)<BoxProps>(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '20px',
+  margin: '20px',
+  borderRadius: '20px',
 }));

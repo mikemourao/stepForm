@@ -7,7 +7,7 @@ export function App() {
       <CssBaseline />
       <GlobalStyles
         styles={{
-          body: { background: '#22262c' }
+          body: { background: '#22262c'}
         }}
       />
       < Index />
