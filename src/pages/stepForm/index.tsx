@@ -25,19 +25,19 @@ const Formulario = () => {
     >
       <Stepper activeStep={etapaAtual}>
         <Step>
-          <StepLabel>Etapa 1</StepLabel>
+          <StepLabel>Contato</StepLabel>
         </Step>
         <Step>
-          <StepLabel>Etapa 2</StepLabel>
+          <StepLabel>Empresa</StepLabel>
         </Step>
         <Step>
-          <StepLabel>Etapa 3</StepLabel>
+          <StepLabel>Projeto</StepLabel>
         </Step>
       </Stepper>
 
       {etapaAtual === 0 && (
         <div>
-          <h2>Etapa 1</h2>
+          <h2>Contato</h2>
           {/* Campos do formulário da etapa 1 */}
           <Button variant="contained" onClick={avancarEtapa}>Avançar</Button>
         </div>
@@ -45,7 +45,7 @@ const Formulario = () => {
 
       {etapaAtual === 1 && (
         <div>
-          <h2>Etapa 2</h2>
+          <h2>Empresa</h2>
           {/* Campos do formulário da etapa 2 */}
           <Button variant="contained" onClick={voltarEtapa}>Voltar</Button>
           <Button variant="contained" onClick={avancarEtapa}>Avançar</Button>
@@ -54,7 +54,7 @@ const Formulario = () => {
 
       {etapaAtual === 2 && (
         <div>
-          <h2>Etapa 3</h2>
+          <h2>Projeto</h2>
           {/* Campos do formulário da etapa 3 */}
           <Button variant="contained" onClick={voltarEtapa}>Voltar</Button>
           <Button variant="contained" type="submit">Enviar</Button>
